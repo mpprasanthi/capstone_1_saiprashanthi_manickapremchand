@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+{% for errors in form.errors.items() %}
+    <h6 style="color:red;" align="left"> {{ ' '.join(errors)}} </h6>
+{% endfor %}
+<div class="jumbotron">
+  <h1>Please enter the sales details : </h1>
+  <form method="POST">
+      {# This hidden_tag is a CSRF security feature. #}
+      {{ form.hidden_tag() }}
+      <table >
+          <tr><td>{{ form.employee_id.label }}</td><td> {{ form.employee_id() }}</td></tr>
+          <tr><td>{{ form.product_id.label }} </td><td>{{ form.product_id() }}</td></tr>
+          <tr><td>{{ form.sold_count.label }}</td><td> {{ form.sold_count()}}</td></tr>
+          <tr><td>{{ form.year_sold.label }}</td><td>{{ form.year_sold()}}</td></tr>
+          <tr><td>{{ form.week_sold.label }}</td><td>{{ form.week_sold()}}</td></tr>
+          <tr><td>{{ form.submit() }}</td></tr>
+      </table>
+  </form>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+  <h4>Sales Data</h4>
+  <table border = 1>
+    <tr>
+      <th>Employee Id</th>
+      <th>Employee Name</th>
+      <th>Pay Grade</th>
+      <th>Region</th>
+      <th>Item Code</th>
+      <th>Sold Count</th>
+      <th>Sold Year</th>
+      <th>Sold Week</th>
+      <th>Sold Quarter</th>
+    </tr>
+    {% for sale in sales  %}
+    <tr>
+      <td>{{sale[0]}}</td>
+      <td>{{sale[1]}}</td>
+      <td>{{sale[2]}}</td>
+      <td>{{sale[3]}}</td>
+      <td>{{sale[4]}}</td>
+      <td>{{sale[5]}}</td>
+      <td>{{sale[6]}}</td>
+      <td>{{sale[7]}}</td>
+      <td>{{sale[8]}}</td>
+    </tr>
+
+    {% endfor %}
+  </table>
+  </div>
+{% endblock %}
