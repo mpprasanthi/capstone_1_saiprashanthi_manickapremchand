@@ -20,7 +20,7 @@ for row in result:
     key = f"{row['sales_year']}#W{row['week0']}"
     yearWeekCalendar[key] = row['id']
 
-#Looping the DataFrame from csv file
+#Looping the DataFrame from sales back up csv file
 for row in sales_backup_df.iterrows():
     item_code = row[1]['ITEM_CODE']
     emp_id = row[1]['EMP_ID']

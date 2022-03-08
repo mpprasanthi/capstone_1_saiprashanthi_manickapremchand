@@ -1,0 +1,6 @@
+pip install ipython-sql
+
+%load_ext sql
+%sql mysql+pymysql://root:Manicka1983@localhost/capstone_1
+
+%%sql
