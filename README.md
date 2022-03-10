@@ -1,5 +1,5 @@
 # capstone_1_saiprashanthi_manickapremchand
-Steps to run Capstone 1 Project
+-------Steps to run Capstone 1 Project-----
 
 cd manickapremchand_saiprashanthi_capstone_1
 
@@ -53,8 +53,8 @@ export flask_app=TractorTEK.py
 
 flask run
 
-#To run CSV file backup data to sales table
+#To run CSV file backup data to sales table --
 python LoadSalesDataFromBackup.py
 
-#To run OLTP to OLAP migration
+#To run OLTP to OLAP migration --
 python OLTPtoOLAP.py
