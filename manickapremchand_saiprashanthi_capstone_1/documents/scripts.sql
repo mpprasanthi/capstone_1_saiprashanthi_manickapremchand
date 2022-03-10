@@ -207,3 +207,14 @@ sale_date DATE,
 sale_count INTEGER
 );
 
+#Indexes
+CREATE INDEX `idx_sales_sale_date`  ON `capstone_1`.`sales` (sale_date);
+CREATE INDEX `idx_prod_code`  ON `capstone_1`.`products` (prod_code);
+CREATE INDEX `idx_esp_esp_code`  ON `capstone_1`.`esp` (esp_code);
+CREATE INDEX `idx_sales_week_calendar_week0`  ON `capstone_1`.`sales_week_calendar` (week0) ;
+CREATE INDEX `idx_sales_week_calendar_sales_year`  ON `capstone_1`.`sales_week_calendar` (sales_year) ;
+CREATE INDEX `idx_sales_team_emp_id`  ON `capstone_1`.`sales_team` (emp_id) ;
+
+
+
+
