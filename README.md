@@ -1,4 +1,7 @@
 # capstone_1_saiprashanthi_manickapremchand
+
+The code repo is not uploaded in Tek Academy as faced issue when trying to upload the zip file which contained the code repo
+
 -------Steps to run Capstone 1 Project-----
 
 cd manickapremchand_saiprashanthi_capstone_1
